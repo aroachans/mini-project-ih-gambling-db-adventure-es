@@ -1,14 +1,14 @@
-CREATE TABLE account (
+CREATE TABLE accounts (
     AccountNo VARCHAR(255),
     CustId INT,
     AccountLocation VARCHAR(255),
-    CurrencyCode VARCHAR(255),
-    DailyDepositLimit DECIMAL(10,2),
-    StakeScale DECIMAL(10,2),
+    CurrencyCode VARCHAR(10),
+    DailyDepositLimit DECIMAL(10, 2),
+    StakeScale DECIMAL(10, 2),
     SourceProd VARCHAR(255)
 );
 
-INSERT INTO account (AccountNo, CustId, AccountLocation, CurrencyCode, DailyDepositLimit, StakeScale, SourceProd) VALUES
+INSERT INTO accounts (AccountNo, CustId, AccountLocation, CurrencyCode, DailyDepositLimit, StakeScale, SourceProd) VALUES
 ('00357DG   ', 3531845, 'GIB', 'GBP', 0, 1.0, 'GM'),
 ('00497XG   ', 4188499, 'GIB', 'GBP', 0, 1.0, 'SB'),
 ('00692VS   ', 4704925, 'GIB', 'USD', 0, 2.0, 'SB'),

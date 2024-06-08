@@ -1,6 +1,6 @@
 CREATE TABLE product (
     CLASSID VARCHAR(255),
-    CATEGORYID INT,
+    CATEGORYID VARCHAR(255),
     product VARCHAR(255),
     sub_product VARCHAR(255),
     description VARCHAR(255),
